@@ -22,7 +22,14 @@ Route::any('/admin/index', function () {
 });
 
 Auth::routes(['verify' => true]);
-Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::any('/home', 'HomeController@index')->name('home')->middleware('verified');
+Route::any('/home/dir/{dir}', 'HomeController@dir')->name('dir')->middleware('verified');
+Route::post('/home/upload', 'HomeController@upload')->name('upload')->middleware('verified');
+Route::post('/home/delete', 'HomeController@delete')->name('delete')->middleware('verified');
+Route::post('/home/rename', 'HomeController@rename')->name('rename')->middleware('verified');
+Route::post('/home/reDir', 'HomeController@reDir')->name('reDir')->middleware('verified');
+Route::post('/home/folderPlus/{dir}', 'HomeController@folderPlus')->name('folderPlus')->middleware('verified');
+Route::any('/home/share', 'HomeController@share')->name('share');
 
 Route::get('login/github', 'Auth\AuthController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\AuthController@handleProviderCallback');

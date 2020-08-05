@@ -148,6 +148,7 @@ return [
     'attributes' => [
         'name'                  => '名称',
         'avatar'                => '头像',
+        'file'                  => '文件',
         'username'              => '用户名',
         'email'                 => '邮箱',
         'first_name'            => '名',
