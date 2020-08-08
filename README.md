@@ -8,7 +8,8 @@
 </p>
 
 ## About Crystals
-Crystals是基于Laravel开发的文件存放系统。
+
+Crystals is a file storage system based on Laravel.
 
 
 ## License
