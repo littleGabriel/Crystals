@@ -21,6 +21,7 @@
 </head>
 <body>
     <div id="app">
+        <img src="img/Crystals.svg" class="img-fluid fixed-bottom" style="z-index: 0;">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
