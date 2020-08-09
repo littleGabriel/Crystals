@@ -63,7 +63,7 @@
             }
         </style>
     </head>
-    <body>
+    <body style="background-image: url('./img/Crystals.svg');background-size: 75%;background-repeat: no-repeat;background-position: right bottom">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -85,9 +85,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/littleGabriel/laravel">GitHub</a>
+                    <a href="https://github.com/littleGabriel/Crystals">GitHub</a>
                 </div>
             </div>
+
         </div>
     </body>
 </html>
