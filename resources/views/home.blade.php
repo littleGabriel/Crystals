@@ -4,7 +4,7 @@
 <div class="container-fluid mt-md-3">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 p-0">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" style="opacity: 0.8">
                 <ol class="breadcrumb mb-0 mb-md-3">
                     @php
                         $dirArr = explode('-',$dir);
@@ -31,7 +31,7 @@
             </nav>
 
             @if ($errors->any())
-            <div class="alert alert-danger alert-dismissible fade show mb-0 mb-md-3 rounded-0">
+            <div class="alert alert-danger alert-dismissible fade show mb-0 mb-md-3 rounded-0" style="opacity: 0.8">
                 @foreach ($errors->all() as $error)
                     {{ $error }}
                 @endforeach
@@ -41,7 +41,7 @@
             </div>
             @endif
 
-            <div class="card p-md-2 shadow-sm rounded-0">
+            <div class="card p-md-2 shadow-sm rounded-0" style="opacity: 0.8">
                 <div class="card-body pt-0">
                         @if($Users_files_count==0)
                             <div class="mt-2">&nbsp;</div>

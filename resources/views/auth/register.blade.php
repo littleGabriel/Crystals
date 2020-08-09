@@ -3,8 +3,8 @@
 @section('content')
 <div class="container mt-3">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm" style="opacity: 0.8">
                 <div class="card-header">{{ __('auth.Register') }}</div>
 
                 <div class="card-body">
